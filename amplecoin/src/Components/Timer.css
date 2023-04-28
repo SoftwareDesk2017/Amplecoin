@@ -1,0 +1,10 @@
+.timer-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.timer-container>div{
+    outline-style: solid;
+    outline-width: thin;
+    padding: 1rem;
+}

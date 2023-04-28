@@ -1,0 +1,85 @@
+*{
+    justify-content:center;
+    text-align: center;
+    color: rgb(212, 208, 208);
+    
+}
+h5{
+    padding: 20px;
+    font-weight: bold;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    object-fit: contain;
+}
+
+label{
+    text-align: start;
+
+}
+.Form-container{
+   
+    display: flex;
+    box-shadow: 1rem;
+    background-color: rgb(63, 42, 122);
+    margin: 50px 350px 50px 350px;
+    border-radius: 5%;
+}
+
+.Type-container{
+    display: flex;
+
+}
+
+.Socials>a{
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 50%;
+    outline-style: solid;
+    outline-width: thin;
+}
+
+.Socials>a:hover{
+background-color: rgb(232, 117, 236);
+color: white;
+}
+
+.form-control{
+    background-color: rgb(77, 44, 168);
+    color: aliceblue;
+}
+ 
+.member{
+    display: flex;
+}
+
+.member>a{
+    display: b;
+}
+
+.form-select{
+    background-color: rgb(77, 44, 168);
+    color: aliceblue;
+
+}
+.form-label{
+    text-align: left;
+}
+
+
+mb-3.form-check>a{
+
+    display: flex;
+}
+
+.Login-Form{
+margin-top:1rem;
+margin-bottom: 2rem;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: medium;
+
+
+}
