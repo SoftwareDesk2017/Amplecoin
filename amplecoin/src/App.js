@@ -7,15 +7,19 @@ import Atokens from './Screens/Atokens'
 import Features from './Screens/Features';
 import Partners from './Screens/Partners';
 import Footer from './Components/Footer/Footer';
+import Roadmap from './Components/Roadmap'
+import Newnavbar from './Components/Header/Newnavbar'
+
 
 function App() {
   return (
     <div>
-      <Navbar/>
+      <Newnavbar/>
       <FirstPage/>
       <About/>
       <Atokens/>
       <Features/>
+      <Roadmap />
       <Partners/>
       <Footer/>
     </div>

@@ -4,7 +4,7 @@ import './FirstPage.css'
 const Features=()=>{
     return(
 
-        <div className="features"  >
+        <section className="features" id="whitelist" >
 
             <h2>Our Best Features</h2>
             <div className="features-container">
@@ -39,7 +39,7 @@ const Features=()=>{
             </div>
 
 
-        </div>
+        </section>
     )
 }
 

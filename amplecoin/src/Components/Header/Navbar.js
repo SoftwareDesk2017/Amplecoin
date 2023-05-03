@@ -2,6 +2,8 @@
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
+
 
 function Navbar() {
 	const navRef = useRef();
@@ -10,6 +12,13 @@ function Navbar() {
 		navRef.current.classList.toggle(
 			"responsive_nav"
 		);
+	}
+	const handleItemClick = (sectionId) => {
+		const section = document.getElementById(sectionId);
+		window.scrollTo({
+		top: section.offsetTop ,
+		behavior: "smooth"
+		});
 	};
 
 	return (
@@ -20,13 +29,13 @@ function Navbar() {
 			</div>
 			
 			<nav ref={navRef}>
-				<a href="/#">Home</a>
-				<a href="/#">About</a>
-				<a href="/#">WhitePaper</a>
-				<a href="/#">RoadMap</a>
-                <a href="/#">WhiteList</a>
-                <a href="/#">Tockennomics</a>
-                <a href="/#">Teams</a>
+				<a href="/#" onClick={() => handleItemClick("hero")}>Home</a>
+				<a href="/#" onClick={() => handleItemClick("about")}>About</a>
+				<a href="/#" onClick={() => handleItemClick("whitepaper")}>WhitePaper</a>
+				<a href="/#" onClick={() => handleItemClick("roadmap")}>RoadMap</a>
+                <a href="/#" onClick={() => handleItemClick("whitelist")}>WhiteList</a>
+                <a href="/#" onClick={() => handleItemClick("tockennomics")}>Tockennomics</a>
+                <a href="/#" onClick={() => handleItemClick("teams")}>Teams</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

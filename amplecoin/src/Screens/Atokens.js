@@ -7,12 +7,18 @@ import './FirstPage.css'
 export const Atokens = ()=>{
  const data = [
     ["token","value"],
-    ["Lock - 84k ", 840000 ],
-    ["Private Partner - 50k ", 50000],
-    ["Public Sell - 7k", 70000],
+    ["Lock - 840k ", 840000 ],
+    ["Partner Channel - 50k ", 50000],
+    ["Public Sell - 70k", 70000],
     ["Dex Liquidity - 20k", 20000],
-    ["Commission Distribution - 2k", 20000],
+    ["Commission Distribution - 20k", 20000],
   ];
+  const tabledata = [
+    { name: "Coin Name", value: "AMPLE COIN" },
+    { name: "Symbol", Value: "AMP" },
+    { name: "Desimals", value:"18"},
+    {name: "Total Supply", value:"10,00,000"},
+  ]
   
 const options = {
     title: " Ample Coin Token Distribution",
@@ -36,12 +42,21 @@ const options = {
   
   ;
   return (
-    <div className="token-container">
+    <section className="token-container" id="whitepaper">
       <div className="graph">
         <h2>TOKEN Details</h2>
-        <h4>Coin Name - AMPLE COIN</h4>
-        <h4>SYMBOL - AMP</h4>
-        <h4>TOTAL SUPPLY - 1000000</h4>
+        <table>
+        
+        {tabledata.map((val, key) => {
+          return (
+            <tr key={key} className="t1">
+              <td>{val.name}</td>
+              <td>{val.value}</td>
+            </tr>
+          )
+        })}
+      </table>
+      
       </div>
 
     <Chart
@@ -52,7 +67,7 @@ const options = {
       options={options}
     />
 
-</div>
+</section>
   );
 }
 

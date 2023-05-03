@@ -4,7 +4,7 @@ import './FirstPage.css'
 
 const About=()=>{
     return(
-    <div class='Fpage-container'>
+    <section class='Fpage-container2' id="about">
         <div>
             <img src="../assets/images/About.png" className="abt-img"></img>
         </div>
@@ -19,7 +19,7 @@ const About=()=>{
             <p>Amp helps you decentralize risk for your users with smart contract features purpose-built for collateral. Nothing more, nothing less.</p>
         </div>
 
-    </div>
+    </section>
     )
 
 }
